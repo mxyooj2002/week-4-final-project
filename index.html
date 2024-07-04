@@ -15,17 +15,17 @@
                 
                     <a href="#" class="nav__logo--container">
                         <img src="./assets/movie-clapperboard.png" alt="" class="movie__logo">
-                    <h1 class="logo__name">MovieBoard</h1>
+                    <h1 class="logo__name link__hover--effect">MovieBoard</h1>
                     </a>
                     <div class="searchbar--container">
-                        <input type="text" class="searchbar" placeholder="Search Movies">
+                        <input type="text" class="searchbar" placeholder="Search Movies" onchange="onSearchChange(event)">
                         <button class="search--button"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 <div>
                     <ul class="nav__links">
-                        <li><a href="" class="nav__link">Home</a></li>
-                        <li><a href="" class="nav__link">About</a></li>
-                        <li><a href="" class="nav__link">Featured Movies</a></li>
+                        <li><a href="" class="nav__link link__hover--effect ">Home</a></li>
+                        <li><a href="" class="nav__link link__hover--effect">About</a></li>
+                        <li><a href="" class="nav__link link__hover--effect">Featured Movies</a></li>
                     </ul>
 
                 </div>
@@ -34,10 +34,82 @@
     </nav>
     <section id="header__section">
             <div class="row">
-                <h1>MovieBoard showcases tons of movies for you online with easy access!</h1>
-
+                <div class="header__container">
+                    <div class="header__intros--container">
+                        <h1 class="header__intro">Search For Any Movies With MovieBoard</h1>
+                        <p class="header__subtitle">MovieBoard allows you to access simple information about movies, search now to find more details.</p>
+                        <h2 class="header__subintro">FEATURED MOVIES</h2>
+                    </div>
+                    <div class="featured__movies--container">
+                        <div class="movie">
+                            <div class="movie__wrapper">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
+                                <div class="movie__popup"></div>
+                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
+                            </div>
+                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__wrapper">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
+                                <div class="movie__popup"></div>
+                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
+                            </div>
+                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__wrapper">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
+                                <div class="movie__popup"></div>
+                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
+                            </div>
+                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__wrapper">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
+                                <div class="movie__popup"></div>
+                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
+                            </div>
+                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__wrapper">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
+                                <div class="movie__popup"></div>
+                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
+                            </div>
+                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__wrapper">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
+                                <div class="movie__popup"></div>
+                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
+                            </div>
+                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
+                        </div>
+                    </div>
+                </div>
             </div>
     </section>
 </body>
+<footer>
+    <div class="row">
+        <div class="footer__container">
+            <div class="footer__links--container">
+                <figure class="footer__logo--container">
+                    <img src="./assets/movie-clapperboard.png" alt="" class="footer__logo">
+                </figure>
+                <ul class="footer__links">
+                    <li><a href="" class="footer__link link__hover--effect">FAQS</a></li>
+                    <li><a href="" class="footer__link link__hover--effect">Contact</a></li>
+                    <li><a href="" class="footer__link link__hover--effect">Back to Top</a></li>
+                </ul>
+            </div>
+            <p class="footer__copyright">Copyright © Meng Xiong</p>
+        </div>
+    </div>
+</footer>
 <script src="index.js"></script>
 </html>
