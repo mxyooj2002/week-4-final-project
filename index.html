@@ -18,8 +18,8 @@
                     <h1 class="logo__name link__hover--effect">MovieBoard</h1>
                     </a>
                     <div class="searchbar--container">
-                        <input type="text" class="searchbar" placeholder="Search Movies" onchange="onSearchChange(event)">
-                        <button class="search--button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" class="searchbar" id="search" placeholder="Search Movies" onchange="onSearchChange(event)">
+                        <button class="search--button" onclick="movieApi()"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 <div>
                     <ul class="nav__links">
@@ -40,47 +40,8 @@
                         <p class="header__subtitle">MovieBoard allows you to access simple information about movies, search now to find more details.</p>
                         <h2 class="header__subintro">FEATURED MOVIES</h2>
                     </div>
-                    <div class="featured__movies--container">
-                        <div class="movie">
-                            <div class="movie__wrapper">
-                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
-                                <div class="movie__popup"></div>
-                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
-                            </div>
-                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
-                        </div>
-                        <div class="movie">
-                            <div class="movie__wrapper">
-                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
-                                <div class="movie__popup"></div>
-                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
-                            </div>
-                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
-                        </div>
-                        <div class="movie">
-                            <div class="movie__wrapper">
-                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
-                                <div class="movie__popup"></div>
-                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
-                            </div>
-                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
-                        </div>
-                        <div class="movie">
-                            <div class="movie__wrapper">
-                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
-                                <div class="movie__popup"></div>
-                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
-                            </div>
-                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
-                        </div>
-                        <div class="movie">
-                            <div class="movie__wrapper">
-                                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
-                                <div class="movie__popup"></div>
-                                <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
-                            </div>
-                            <p class="movie__title"><b>Guardians of The Galaxy</b></p>
-                        </div>
+                </div>
+                    <div class="movies--container">
                         <div class="movie">
                             <div class="movie__wrapper">
                                 <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" class="movie__poster">
@@ -90,7 +51,6 @@
                             <p class="movie__title"><b>Guardians of The Galaxy</b></p>
                         </div>
                     </div>
-                </div>
             </div>
     </section>
 </body>
@@ -111,5 +71,5 @@
         </div>
     </div>
 </footer>
-<script src="index.js"></script>
+<script src="index.js" defer></script>
 </html>
