@@ -13,6 +13,8 @@ if (movieData.Search) {
 
 
 
+
+
 console.log(movieData)
 }
 
@@ -26,16 +28,15 @@ async function onSearchChange(event) {
 onSearchChange()
 
 function movieHtml(movie) {
-return `<div class="movies--container">
+return `
     <div class="movie">
         <div class="movie__wrapper">
             <img src="${movie.Poster}" alt="" class="movie__poster">
             <div class="movie__popup"></div>
             <div class="movie__popup--tag link__hover--effect">More Info</div>                                    
-        </div>
         <p class="movie__title"><b>${movie.Title}</b></p>
     </div>
-</div>`
+    </div>`
 }
 
  
